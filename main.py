@@ -1,5 +1,7 @@
-#3
-def func_3(*args):
-    x = ' '.join(args)
-    print(x)
-func_3("wow", "miss", "killer_quuen", "black_cat", "sweet_and_tears")
+#4
+def func_4(*args):
+    dict1 = {}
+    for name, age in args:
+        dict1[name] = age
+    return dict1
+print(func_4(*[('Kaeya', 24), ('Diluc', 24), ('Albedo', 5000), ('Tartaglia', 20)]))
