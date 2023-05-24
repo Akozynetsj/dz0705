@@ -1,8 +1,8 @@
-#1
-def func_1(*args):
-    count = 0
-    for argument in args:
-        count += argument
-        a = count / 5
-    print(a)
-func_1(2, 5, 6, 7, 13)
+#2
+def max_lenth(*args):
+    max_len = 0
+    for arg in args:
+        if len(arg) > max_len:
+            max_len = len(arg)
+    return print("Максимальна кількість символів у рядку:", max_len)
+max_lenth("good", "like", "instagram", "viber", "telegram")
