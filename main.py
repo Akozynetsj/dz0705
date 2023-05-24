@@ -1,7 +1,7 @@
-#4
-def func_4(*args):
-    dict1 = {}
-    for name, age in args:
-        dict1[name] = age
-    return dict1
-print(func_4(*[('Kaeya', 24), ('Diluc', 24), ('Albedo', 5000), ('Tartaglia', 20)]))
+#5
+def combine_dicts(*dicts):
+    result_dict = {}
+    for i in dicts:
+        result_dict.update(i)
+    return result_dict
+print(combine_dicts({'book': 'blue', 'carrot': 'pirple', 'humster': 'cat', "1": "2", "22":"2", "2":"9"}, {'carrot': 'green', 'banana': 'yellow', "22":"3", 'cat': 'zoom', "1":"3", "33":"45"}, {'cat': 'turkish', "2":"22", 'zoom': "English"}))
